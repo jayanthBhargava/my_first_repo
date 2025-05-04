@@ -8,3 +8,15 @@ git push
 
 how to push local to github
 
+git remote add origin https://jayanthBhargava@github.com/jayanthBhargava/my_first_repo
+we can't push this way we need to provide authentication
+jayanthBhargava
+git push origin master  
+
+to remove the remote in case if you do any mistake
+git remote remove origin 
+git remote -v
+
+
+
+ 

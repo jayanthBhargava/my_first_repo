@@ -27,24 +27,10 @@ sleep_input = input("🛌 How many hours do you sleep per day?: ")
 mood = input("🧠 What's your current mood? (calm, anxious, sad, irritable): ")
 pre_condition = input("🏥 Do you have any pre-existing conditions? (yes/no): ")
 
-# Validate numeric inputs
-if temp_input.replace(".", "", 1).isdigit():
-    temperature = float(temp_input)
-else:
-    print("❌ Invalid temperature. Please restart and enter a number.")
-    exit()
-
-if days_sick_input.isnumeric():
-    sick_days = int(days_sick_input)
-else:
-    print("❌ Invalid number of sick days.")
-    exit()
-
-if sleep_input.isnumeric():
-    sleep = int(sleep_input)
-else:
-    print("❌ Invalid sleep hours.")
-    exit()
+# Directly converting inputs without validation
+temperature = float(temp_input)
+sick_days = int(days_sick_input)
+sleep = int(sleep_input)
 
 # 3. Risk Scoring
 score = 0
@@ -84,7 +70,7 @@ if pre_condition == "yes":
 
 # 4. Risk Result
 print(f"\n🔍 Health Risk Analysis for {name}")
-print("📊 Total Score:", score)
+print("📊 Total Score:")
 time.sleep(5)
 
 if score <= 3:

@@ -1,2 +1,3 @@
 Day1: Today i created my basic python code.
 Day2: Added a sum function.
+Day2: Added a multiply function.

@@ -2,3 +2,26 @@ Day1: Today i created my basic python code.
 Day2: Added a sum function.
 Day3: Added a multiply function.
 Day4: Added a subtraction function.
+
+git init (only once)
+git add . (satge the chnages)
+git commit -m "message"
+git log
+git checkout id (travers across commit/time travel)
+git checkout master (come back to most recent commit)
+git push
+
+how to push local to github
+
+git remote add origin https://jayanthBhargava@github.com/jayanthBhargava/my_first_repo
+we can't push this way we need to provide authentication
+jayanthBhargava
+git push origin master  
+
+to remove the remote in case if you do any mistake
+git remote remove origin 
+git remote -v
+
+
+
+ 
